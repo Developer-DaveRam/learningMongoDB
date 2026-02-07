@@ -28,11 +28,11 @@ export class ResponseBuilder {
     }
 
 
-    static sucess(status:number,message:"Sucess",data:any[] = []):ResponseFormate{
+    static sucess(status:number,message:String="Sucess",data:any[] = []):ResponseFormate{
         return new ResponseBuilder(status,message,data).build()
     }
 
-    static failur(status:number,message:"Failer",data:any[] = []):ResponseFormate{
+    static failur(status:number,message:String = "Failer",data:any[] = []):ResponseFormate{
         return new ResponseBuilder(status,message,data).build()
     }
 
