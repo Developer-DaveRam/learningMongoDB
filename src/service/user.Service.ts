@@ -12,4 +12,5 @@ export  class UserService{
             return ResponseBuilder.failur(0,error.message,[error])
         }
     }
+    
 } 
